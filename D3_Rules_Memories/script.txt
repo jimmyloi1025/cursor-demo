@@ -1,0 +1,17 @@
+Project Rules
+- live in .cursor/rules, which is a file and version-controlled.
+- used for encode domain-specific knowledge about our codebase
+- automate project-specific workflows or templates
+- standardize sype or architecture choice
+- we can organize rules with directories 
+
+Nested Rules
+Placing rules in .cursor/rules directories throughout the specific project:
+For example:
+project/
+  .cursor/rules/        # Project-wide rules
+  backend/
+    server/
+      .cursor/rules/    # Backend-specific rules
+  frontend/
+    .cursor/rules/      # Frontend-specific rules

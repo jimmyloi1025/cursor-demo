@@ -1,0 +1,79 @@
+---
+globs: *.py
+description: Security-first coding standards with concrete examples
+---
+
+# Security Standards
+
+## Input Validation Pattern
+
+Always validate and sanitize inputs. Use this pattern:
+
+```python
+def validate_ip_address(ip_str: str) -> bool:
+    """Validate IP address format."""
+    if not isinstance(ip_str, str) or not ip_str.strip():
+        raise ValueError("IP address must be a non-empty string")
+    
+    try:
+        ip_address(ip_str.strip())
+        return True
+    except ValueError:
+        return False
+```
+
+## Configuration Loading
+
+Use secure defaults and validate all config parameters:
+
+```python
+def load_config(path: Path) -> Dict[str, Any]:
+    defaults = {
+        "siem": {"verify_ssl": True, "timeout_seconds": 5},
+        "monitor": {"interval_seconds": 5}
+    }
+    
+    if path.exists():
+        with path.open("r", encoding="utf-8") as f:
+            try:
+                user_cfg = yaml.safe_load(f) or {}
+            except yaml.YAMLError as exc:
+                raise RuntimeError(f"Invalid YAML in {path}: {exc}")
+        # Merge with secure defaults
+        return {**defaults, **user_cfg}
+    return defaults
+```
+
+## Error Handling
+
+Never expose internal details in error messages:
+
+```python
+try:
+    result = risky_operation()
+except SpecificError as e:
+    logger.error(f"Operation failed: {e}")
+    raise RuntimeError("Operation failed") from None  # Generic message
+```
+
+## Logging Security Events
+
+Use structured logging for security events:
+
+```python
+logger.warning("SECURITY_ALERT: %s", json.dumps({
+    "event_type": "suspicious_connection",
+    "remote_ip": remote_ip,
+    "risk_score": 85,
+    "timestamp": datetime.now(timezone.utc).isoformat()
+}))
+```
+
+## Required Patterns
+
+- Use `Optional[Type]` for nullable parameters
+- Include type hints for all function signatures  
+- Use `async/await` for I/O operations
+- Validate all external inputs
+- Use secure defaults (SSL verification, timeouts)
+- Log security events with context
