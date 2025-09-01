@@ -1,7 +1,4 @@
----
-alwaysApply: true
----
-# Project Rules
+# Agent Rules
 
 ## Security First
 Always implement security best practices: validate inputs, use secure defaults, and log security events.
@@ -10,5 +7,4 @@ Always implement security best practices: validate inputs, use secure defaults, 
 Use type hints for all functions, include docstrings, and follow async/await patterns for I/O operations.
 
 ## Documentation
-Write clear, actionable commit messages and document all configuration option
-
+Write clear, actionable commit messages and document all configuration options with examples.
