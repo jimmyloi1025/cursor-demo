@@ -1,0 +1,15 @@
+Go to Setting/BackgroundAgents/login_to_github
+
+Git Operations in Cursor
+1. Source Control Panel (Ctrl+Shift+G)
+This is the visual Git interface where you can:
+-Stage files by clicking the + button
+-Write commit messages
+-See file diffs
+-Push/pull changes
+-View branch information
+2. AI Chat Panel for Git Operations
+You can use the AI chat panel to:
+- Ask for executing complex and multiple Git Operations
+- Request assistance with commit messages
+- Troubleshoot Git issues
