@@ -1,3 +1,8 @@
+Rules - system levevls instructions to Agent and Inline Edit, which gives persistent context,
+preferences or workflows to projects
+
+User Rules (Settings/Rules&Memories)
+
 Project Rules
 - live in .cursor/rules, which is a file and version-controlled.
 - used for encode domain-specific knowledge about our codebase
@@ -14,4 +19,6 @@ project/
     server/
       .cursor/rules/    # Backend-specific rules
   frontend/
-    .cursor/rules/      # Frontend-specific rules
+    .cursor/rules/      # Frontend-specific rules\
+
+AGENT.md markdown - simple version of Project Rules

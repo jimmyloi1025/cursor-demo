@@ -1,25 +1,5 @@
 - A new feature from the developer of Cursor
-
-- Create customized nodes to perform specific 
-
-graph TD
-    Main["Memory Bank System"] --> Modes["Custom Modes"]
-    Main --> Rules["Hierarchical Rule Loading"]
-    Main --> Visual["Visual Process Maps"]
-    Main --> Token["Token Optimization"]
-    
-    Modes --> VAN["VAN: Initialization"]
-    Modes --> PLAN["PLAN: Task Planning"]
-    Modes --> CREATIVE["CREATIVE: Design"]
-    Modes --> IMPLEMENT["IMPLEMENT: Building"]
-    Modes --> REFLECT["REFLECT: Review"]
-    Modes --> ARCHIVE["ARCHIVE: Documentation"]
-    
-    style Main fill:#4da6ff,stroke:#0066cc,color:white
-    style Modes fill:#f8d486,stroke:#e8b84d,color:black
-    style Rules fill:#80ffaa,stroke:#4dbb5f,color:black
-    style Visual fill:#d9b3ff,stroke:#b366ff,color:black
-    style Token fill:#ff9980,stroke:#ff5533,color:black
+- Create customized nodes to achieve memorybank features:
 
 
 
