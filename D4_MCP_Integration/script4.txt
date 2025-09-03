@@ -1,0 +1,5 @@
+Show MCP JSON Configuration
+
+Request: I need to design a secure API authentication system that handles rate limiting, JWT tokens, and audit logging.
+Walk me through the design step by step, with the use of sequential thinking MCP and context7 to help you think of the 
+workflows and architecture.

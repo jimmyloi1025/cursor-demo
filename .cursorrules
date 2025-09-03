@@ -1,0 +1,49 @@
+# Cursor Vibe Coding Demo - Project Intelligence
+
+## Project Overview
+This is a Level 3 complexity demonstration project showcasing Cursor's advanced AI capabilities through four integrated components.
+
+## Key Patterns & Preferences
+
+### Security-First Development
+- Always implement security best practices first
+- Validate all inputs and use secure defaults
+- Log security events and implement audit trails
+- Follow OWASP guidelines for web applications
+
+### Production-Ready Standards
+- Use type hints and comprehensive docstrings
+- Implement proper error handling and logging
+- Include comprehensive testing (unit, integration, security)
+- Follow async/await patterns for I/O operations
+
+### Memory Bank Integration
+- Always read Memory Bank files at session start
+- Update documentation after significant changes
+- Use progressive documentation templates
+- Maintain tasks.md as single source of truth
+
+### Demo Component Integration
+- Each component should demonstrate before/after improvements
+- Focus on real-world development scenarios
+- Implement clear success metrics
+- Enable seamless workflow transitions
+
+## Technology Stack
+- Python for backend services
+- Modern web frameworks (FastAPI/Flask)
+- Security libraries (cryptography, passlib)
+- Testing frameworks (pytest, coverage)
+- Documentation tools (Sphinx, MkDocs)
+
+## Development Workflow
+- VAN  PLAN  CREATIVE  IMPLEMENT  QA
+- Use Memory Bank for context preservation
+- Implement progressive complexity handling
+- Maintain security compliance throughout
+
+## Quality Standards
+- Code coverage > 90%
+- Security scan passing
+- Performance benchmarks met
+- Documentation complete and current
