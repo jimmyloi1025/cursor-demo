@@ -1,0 +1,161 @@
+---
+alwaysApply: true
+---
+
+# Project-Specific Rules for Cursor Vibe Coding Demo
+
+## 🏗️ Architecture & Design Patterns
+
+### Component Structure
+- Use functional components with hooks for React components
+- Implement container/presenter pattern for complex components
+- Always separate business logic from UI components
+- Use TypeScript interfaces for all component props
+
+### State Management
+- Prefer React Context for global state over prop drilling
+- Use Redux Toolkit for complex state management
+- Implement optimistic updates for better UX
+- Always handle loading and error states
+
+## 🔒 Security-First Development
+
+### Input Validation
+- Validate ALL user inputs on both client and server
+- Use Zod schemas for runtime type validation
+- Implement rate limiting for API endpoints
+- Sanitize HTML content to prevent XSS attacks
+
+### Authentication & Authorization
+- Use JWT tokens with short expiration times
+- Implement refresh token rotation
+- Always check user permissions before data access
+- Log all authentication events for audit trails
+
+### Data Protection
+- Encrypt sensitive data at rest and in transit
+- Use environment variables for all secrets
+- Never log passwords, tokens, or personal data
+- Implement proper CORS policies
+
+## 📝 Code Quality Standards
+
+### Documentation
+- Write JSDoc comments for all functions and classes
+- Include usage examples in documentation
+- Document all configuration options
+- Keep README files updated with setup instructions
+
+### Testing Requirements
+- Maintain minimum 80% code coverage
+- Write unit tests for all utility functions
+- Include integration tests for API endpoints
+- Test error handling and edge cases
+
+### Performance
+- Implement lazy loading for routes and components
+- Use React.memo for expensive components
+- Optimize bundle size with code splitting
+- Monitor and optimize database queries
+
+## 🎨 UI/UX Guidelines
+
+### Design System
+- Use consistent spacing scale (4px, 8px, 16px, 24px, 32px)
+- Implement dark/light theme support
+- Follow accessibility guidelines (WCAG 2.1 AA)
+- Use semantic HTML elements
+
+### Responsive Design
+- Mobile-first approach for all components
+- Test on multiple screen sizes
+- Use CSS Grid and Flexbox for layouts
+- Implement touch-friendly interactions
+
+### Accessibility
+- Provide alt text for all images
+- Use proper heading hierarchy (h1, h2, h3)
+- Ensure keyboard navigation works
+- Test with screen readers
+
+## 🚀 Development Workflow
+
+### Git Practices
+- Use conventional commit messages (feat:, fix:, docs:, etc.)
+- Create feature branches from main
+- Require code review before merging
+- Squash commits before merging to main
+
+### Code Review
+- Review for security vulnerabilities first
+- Check for performance issues
+- Ensure proper error handling
+- Verify accessibility compliance
+
+### Deployment
+- Use staging environment for testing
+- Implement blue-green deployment
+- Monitor application metrics
+- Have rollback procedures ready
+
+## 🧪 Testing Strategy
+
+### Unit Testing
+- Test individual functions and components
+- Mock external dependencies
+- Use descriptive test names
+- Group related tests in describe blocks
+
+### Integration Testing
+- Test API endpoints with real database
+- Verify authentication flows
+- Test error scenarios
+- Check data consistency
+
+### E2E Testing
+- Test critical user journeys
+- Use realistic test data
+- Test on multiple browsers
+- Include mobile testing
+
+## 📊 Monitoring & Logging
+
+### Application Monitoring
+- Track key performance metrics
+- Monitor error rates and response times
+- Set up alerts for critical issues
+- Use structured logging format
+
+### Error Handling
+- Log all errors with context
+- Implement graceful degradation
+- Provide user-friendly error messages
+- Track error patterns for debugging
+
+## 🔧 Configuration Management
+
+### Environment Setup
+- Use .env files for local development
+- Validate environment variables at startup
+- Provide clear setup instructions
+- Use different configs for dev/staging/prod
+
+### Feature Flags
+- Implement feature toggles for gradual rollouts
+- Use environment-based feature flags
+- Document all feature flags
+- Clean up unused feature flags
+
+## 📚 Learning & Documentation
+
+### Knowledge Sharing
+- Document architectural decisions (ADRs)
+- Share learnings in team meetings
+- Create troubleshooting guides
+- Maintain up-to-date API documentation
+
+### Code Examples
+- Include working examples in documentation
+- Provide common use case patterns
+- Document anti-patterns to avoid
+- Keep examples current with codebase
